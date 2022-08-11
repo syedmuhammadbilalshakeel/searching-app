@@ -162,18 +162,24 @@ elements.forEach((element) => {
 
 document.getElementById("search").addEventListener("click" ,() => {
     let searchInput =document.getElementById("search-input").value;
-    let element =document.querySelectorAll(".product-name");
+    let elements =document.querySelectorAll(".product-name");
     let cards = document.querySelectorAll(".card");
- console.log(searchInput);
+    // // console.log(searchInput);
     // element.forEach((element,index)=>{
     //     if(element.innerText.)
-    // })
+    // // })
     // if(element.innerText.include(searchInput.toUpperCase())){
-    //     card[index].classList.remove("hide")
+    //     cards[index].classList.remove("hide")
     // }else{
-    //     card[index].classList.add("hide");
+    //     cards[index].classList.add("hide");
     // }
-    
+    elements.forEach((element, index) => {
+        if(element.innerText.includes(searchInput.toUpperCase())){
+            cards[index].classList.remove("hide")
+        }else{
+            cards[index].classList.add("hide")
+        }
+    })
 });
 
 window.onload=  () => {
