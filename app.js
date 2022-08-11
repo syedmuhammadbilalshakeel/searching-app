@@ -38,7 +38,7 @@ var products = {
     },
     {
         productName: "Brown men's jacket",
-        categeory: "jacket",
+        categeory: "Jacket",
         price: "189",
         image:"brown-jacket.jpg",
     },
